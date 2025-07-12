@@ -1,0 +1,27 @@
+{
+  "name": "poker-equity-react",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.34.0",
+    "classnames": "^2.5.1",
+    "phe": "^0.6.0",
+    "poker-evaluator": "^2.1.0",
+    "pokersolver": "^2.1.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.1.0",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.4.4",
+    "vite": "^5.2.0"
+  }
+}
