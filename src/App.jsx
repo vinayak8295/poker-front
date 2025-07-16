@@ -85,7 +85,7 @@ function EquityForm() {
     </div>
   );
 }
-function Result({ win, tie, lose, nuts, nutHolePairs, opponentNutsProb, error }) {
+function Result({ win, tie, lose, nuts, nutHolePairs, opponentNutsProb, heroHandClass, heroHandRank, higherHandChance, error }) {
   if (error) {
     return <div className="mt-6 bg-red-800 p-4 rounded text-white">Error: {error}</div>;
   }
@@ -116,6 +116,21 @@ function Result({ win, tie, lose, nuts, nutHolePairs, opponentNutsProb, error })
         Pr(opponent has nuts):{" "}
         <strong>{(opponentNutsProb * 100).toFixed(2)} %</strong>
       </p>
+      {heroHandClass && (
+        <p>
+          Your hand class: <strong>{heroHandClass}</strong>
+        </p>
+      )}
+      {heroHandRank && (
+        <p>
+          Your hand rank: <strong>{heroHandRank}</strong>
+        </p>
+      )}
+      {higherHandChance !== undefined && (
+        <p>
+          Chance opponent has a higher hand: <strong>{higherHandChance.toFixed(2)} %</strong>
+        </p>
+      )}
     </div>
   );
 }
