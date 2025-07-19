@@ -17,7 +17,7 @@ function EquityForm() {
   const [players, setPlayers] = useState(6);
   const [hero, setHero] = useState("Ah Kd");
   const [board, setBoard] = useState("");
-  const [iters, setIters] = useState(200000);
+  const [iters, setIters] = useState(10000);
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const calc = async () => {
